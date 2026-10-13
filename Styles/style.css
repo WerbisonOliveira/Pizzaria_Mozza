@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+:root {
+    --background_body: #F8F0E3;
+    --title_footer: #242120;
+}
+
+body {
+    background-color: var(--background_body);
+    color: var(--title_footer);
+}
