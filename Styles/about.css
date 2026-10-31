@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+#about {
+    padding: 1rem 1rem 4rem 1rem;
+    background: url("../Imgs/about/Background.png") no-repeat center fixed;
+}
+
+.container-title-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0rem 7rem 2rem;
+    gap: 0.5rem;
+}
+
+
+.line-about {
+    width: 100px;
+    height: 3px;
+    background-color: #DFA94A;
+}
+
+.title-about {
+    padding-bottom: 0.6rem;
+    font-style: italic;
+    font-size: 3rem;
+    text-align: center;
+    color: #242120;
+    font-family: var(--font_titles_calls);
+}
+
+.about-pizzaria {
+    position: relative;
+    padding: 1rem;
+    margin-left: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+
+.container-img-about {
+    cursor: pointer;
+    animation: animation_about 1s linear infinite alternate;
+}
+
+.container-img-about > .shadow {
+    position: absolute;
+    margin-top: -20px;
+    margin-left: 20px;
+    border-radius: 10px;
+    height: 250px;
+    width: 250px;
+    background-color: #dfa84a62;
+    transform: rotateZ(3deg);
+    transition: 0.5s;
+}
+
+.container-img-about > img {
+    cursor: pointer;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 1px 1px 7px #00000059;
+    transform: rotateZ(-3deg);
+    transition: 0.5s;
+}
+
+.container-img-about:hover > img {
+    transition: 0.5s;
+    transform: rotateZ(-1deg);
+}
+
+.container-img-about:hover > .shadow {
+    transition: 0.5s;
+    transform: rotateZ(-1deg);
+}
+
+@keyframes animation_about {
+    0% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(5px);
+    }
+}
+
+.description-about {
+    font-style: italic;
+    width: 450px;
+    padding: 1rem;
+}
+
+.description-about > p {
+    text-align: justify;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    font-family: var(--font_general);
+}
+
+.cards {
+    margin-top: 3.5rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-quality {
+    border: 1px solid #DFA94A;
+    cursor: pointer;
+    padding: 1rem;
+    width: 330px;
+    height: 190px;
+    border-radius: 10px;
+    background-color: #F8F0E3;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    transition: 0.3s;
+}
+
+.card-quality:hover {
+    transform: translateY(-5px);
+    box-shadow: 1px 1px 7px #00000030;
+    transition: 0.3s;
+}
+
+.card-quality > img {
+    width: 30px;
+}
+
+.card-quality > h3 {
+    font-size: 1.1rem;
+    font-family: var(--font_general);
+}
+
+.card-quality > p {
+    font-size: 1rem;
+    font-family: var(--font_general);
+}
